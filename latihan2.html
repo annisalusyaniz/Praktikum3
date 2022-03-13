@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <script language="Javascript">
+        //<!-
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+
+        function plus() {
+            var A1 = document.kalkulator.A1.value
+            var A2 = document.kalkulator.A2.value
+            var A3 = parseInt(A1) + parseInt(A2)
+            document.kalkulator.A3.value = A3
+        }
+
+        function mns() {
+            var A1 = document.kalkulator.A1.value
+            var A2 = document.kalkulator.A2.value
+            var A3 = parseInt(A1) - parseInt(A2)
+            document.kalkulator.A3.value = A3
+        }
+
+        function mult() {
+            var A1 = document.kalkulator.A1.value
+            var A2 = document.kalkulator.A2.value
+            var A3 = parseInt(A1) * parseInt(A2)
+            document.kalkulator.A3.value = A3
+        }
+
+        function dis() {
+            var A1 = document.kalkulator.A1.value
+            var A2 = document.kalkulator.A2.value
+            var A3 = parseInt(A1) / parseInt(A2)
+            document.kalkulator.A3.value = A3
+        }
+
+        //->
+    </script>
+
+    <form name="kalkulator">
+        <p>Bilangan 1 : <input type="text" name="A1"> <input type="button" value="+" onclick="plus()"> <input type="button" value="-" onclick="mns()"></p>
+        <p>Bilangan 2 : <input type="text" name="A2"> <input type="button" value="x" onclick="mult()"> <input type="button" value="/" onclick="dis()"></p>
+        <p>Hasil &emsp; &nbsp; &nbsp; : <input type="text" name="A3"></p>
+
+    </form>
+</body>
+
+
+</html>
